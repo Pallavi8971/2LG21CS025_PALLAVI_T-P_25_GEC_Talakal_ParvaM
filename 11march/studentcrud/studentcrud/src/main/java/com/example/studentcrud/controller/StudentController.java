@@ -13,8 +13,6 @@ import com.example.studentcrud.service.StudentService;
 
 import org.springframework.ui.Model;
 
-
-
 @Controller
 @RequestMapping("/users")
 public class StudentController {

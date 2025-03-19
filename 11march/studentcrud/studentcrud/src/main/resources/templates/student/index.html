@@ -21,9 +21,13 @@
                     <th>ID</th>
                     <th>Name</th>
                     <th>Email</th>
+                    <th>DOB</th>
                     <th>Phone</th>
                     <th>Adress</th>
                     <th>Gender</th>
+                    <th>Section</th>
+                    <th>Photo</th>
+                    <th>Subject</th>
                     <th>Action</th>
                 </tr>
             </thead>
@@ -32,9 +36,13 @@
                     <td th:text="${stu.id}"></td>
                     <td th:text="${stu.name}"></td>
                     <td th:text="${stu.email}"></td>
+                    <td th:text="${stu.dob}"></td>
                     <td th:text="${stu.phone}"></td>
                     <td th:text="${stu.adress}"></td>
                     <td th:text="${stu.gender}"></td>
+                    <td th:text="${stu.section}"></td>
+                    <td th:text="${stu.photo}"></td>
+                    <td th:text="${stu.subject}"></td>
                     <td>
                         <a th:href="@{/users/edit/{id}(id=${stu.id})}" class="btn btn-primary">Edit</a>
                         <a th:href="@{/users/delete/{id}(id=${stu.id})}" class="btn btn-danger">Delete</a>

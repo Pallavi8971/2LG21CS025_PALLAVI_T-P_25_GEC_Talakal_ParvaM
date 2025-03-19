@@ -15,9 +15,13 @@ public class Student {
     private Long id;
     private String name;
     private String email;
+    private String dob;
     private String phone;
     private String adress;
     private String gender;
+    private String section;
+    private String photo;
+    private String subject;
     
     public Long getId( ) {
         return id;
@@ -37,6 +41,12 @@ public class Student {
     public void setEmail(String email){
         this.email = email;
     }
+    public String getDob(){
+        return dob;
+    }
+    public void setDob(String dob){
+        this.dob = dob;
+    }
     public String getPhone(){
         return phone;
     }
@@ -55,6 +65,27 @@ public class Student {
     public void setGender(String gender){
         this.gender = gender;
     }
+    
+    public String getSection(){
+        return section;
+    }
+    public void setSection(String section){
+        this.section = section;
+    }
+    public String getPhoto(){
+        return photo;
+    }
+    public void setPhoto(String photo){
+        this.photo = photo;
+    }
+    public String getSubject(){
+        return subject;
+    }
+    public void setSubject(String subject){
+        this.subject = subject;
+    }
+
+
 
 
 }

@@ -21,9 +21,11 @@
                     <th>ID</th>
                     <th>Name</th>
                     <th>Email</th>
+                    <th>DOB</th>
                     <th>Phone</th>
                     <th>Adress</th>
                     <th>Gender</th>
+                    <th>Education</th>
                     <th>Action</th>
                 </tr>
             </thead>
@@ -32,9 +34,11 @@
                     <td th:text="${emp.id}"></td>
                     <td th:text="${emp.name}"></td>
                     <td th:text="${emp.email}"></td>
+                    <td th:text="${emp.dob}"></td>
                     <td th:text="${emp.phone}"></td>
                     <td th:text="${emp.adress}"></td>
                     <td th:text="${emp.gender}"></td>
+                    <td th:text="${emp.education}"></td>
                     <td>
                         <a th:href="@{/pallavi/edit/{id}(id=${emp.id})}" class="btn btn-primary">Edit</a>
                         <a th:href="@{/pallavi/delete/{id}(id=${emp.id})}" class="btn btn-danger">Delete</a>

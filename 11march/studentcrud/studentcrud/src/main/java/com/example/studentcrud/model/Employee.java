@@ -15,9 +15,11 @@ public class Employee {
     private Long id;
     private String name;
     private String email;
+    private String dob;
     private String phone;
     private String adress;
     private String gender;
+    private String education;
     
     public Long getId( ) {
         return id;
@@ -37,6 +39,12 @@ public class Employee {
     public void setEmail(String email){
         this.email = email;
     }
+    public String getDob(){
+        return dob;
+    }
+    public void setDob(String dob){
+        this.dob = dob;
+    }
     public String getPhone(){
         return phone;
     }
@@ -55,6 +63,11 @@ public class Employee {
     public void setGender(String gender){
         this.gender = gender;
     }
+public String getEducation(){
+        return education;
+    }
+    public void setEducation(String education){
+        this.education = education;
 
-
+    }
 }

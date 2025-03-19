@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Employee</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('/images/pallavi.jpeg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%
+        }
+    </style>
 </head>
 
 <body>
@@ -22,6 +29,10 @@
                     <input type="email" class="form-control" id="employeeEmail" th:field="*{email}" placeholder="Enter employee email">
                 </div>
                 <div class="form-group">
+                    <label for="dob">DOB</label>
+                    <input type="date" class="form-control" id="employeedob" th:field="*{dob}" placeholder="Enter employee dob">
+                </div>
+                <div class="form-group">
                     <label for="employeePhone">Phone</label>
                     <input type="number" class="form-control" id="employeePhone" th:field="*{phone}" placeholder="Enter employee Phone">
                 </div>
@@ -30,7 +41,7 @@
                     <input type="text" class="form-control" id="employeeAdress" th:field="*{adress}" placeholder="Enter employee Adress">
                 </div>
                 <div class="form-check">
-                    <label for="employeeGender">Gender</label><br>
+                    <label for="employeetAge">Gender</label><br>
                     <input class="form-check-input" type="radio" name="gender" id="gridRadios1" value="male" th:field="*{gender}">
                     <label class="form-check-label" for="gridRadios1">
                      Male
@@ -42,6 +53,16 @@
                       Female
                     </label>
                 </div>
+                <div class="form-group">
+                    <label for="education">Education</label><br>
+                    <input type="checkbox" id="SSLC" name="education" th:field="*{education}" placeholder="Enter employee education" value="SSLC">
+                    <label for="SSLC">SSLC</label><br>
+                    <input type="checkbox" id="PUC" name="education" th:field="*{education}" placeholder="Enter employee education" value="PUC">
+                    <label for="PUC">PUC</label><br>
+                    <input type="checkbox" id="Degree" name="education" th:field="*{education}" placeholder="Enter employee education" value="Degree">
+                    <label for="Degree">Degree</label><br>
+                </div>
+
 
                 <button type="submit" class="btn btn-primary btn-block">Submit</button>
             </form>
