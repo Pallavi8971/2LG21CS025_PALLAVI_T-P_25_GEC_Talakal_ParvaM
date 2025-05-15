@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <div th:replace="fragment/nav :: nav"></div>
     <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
         <div class="w-50">
             <h1 class="mt-5 text-center">Create Student</h1>
@@ -41,7 +42,7 @@
                     <input type="text" class="form-control" id="studentAdress" th:field="*{adress}" placeholder="Enter student Adress">
                 </div>
                 <div class="form-check">
-                    <label for="employeetAge">Gender</label><br>
+                    <label for="student">Gender</label><br>
                     <input class="form-check-input" type="radio" name="gender" id="gridRadios1" value="male" th:field="*{gender}">
                     <label class="form-check-label" for="gridRadios1">
                      Male
@@ -76,10 +77,6 @@
                     <input type="checkbox" id="Chemistry" name="subject" th:field="*{subject}" placeholder="Enter student subject3" value="Chemistry">
                     <label for="subject3">Chemistry</label><br>
                 </div>
-
-
-
-
 
                 <button type="submit" class="btn btn-primary btn-block">Submit</button>
             </form>
